@@ -161,27 +161,22 @@ High-resolution satellite and aerial imagery are increasingly used to provide as
 Within the hackathon, for supervised classification a Quickshift segmentation algorithm and a Random Tree classification algorithm were implemented using Python libraries.  An interactive feature selection tool was developed to label features for training data.  And lastly, readers for several different file formats were developed.  While far from complete, the conclusion drawn was that such an open pipeline was both worthwhile pursuing and relatively easily realisable, in so far as all the required quality open source libraries already exist.
 
 \subsection{Outcomes}
-Table \ref{stats} provides a summary of the event in numerical terms and a social media based account of the event is available at \cite{noauthor_undated-az} (\url{https://storify.com/r4space/getting-started}).  Regarding intangible outcomes, in the post-event survey the largest request was for more time.  Despite the majority of respondents agreeing that the objectives were reasonable given the time allotted, afterwards only 35\% (6) of participants considered the allocated time sufficient to reach what were the goals in their view, although 60\% indicated that the majority of objectives had been met.  
+Table \ref{stats} provides a summary of the event in numerical terms and a social media based account of the event is available at \cite{noauthor_undated-az}.  Regarding intangible outcomes, in the post-event survey the largest request was for more time.  Despite the majority of respondents agreeing that the objectives were reasonable given the time allotted, afterwards only 35\% (6) of participants considered the allocated time sufficient to reach what were the goals in their view, although 60\% indicated that the majority of objectives had been met.  
 
 The majority specifically indicated more hacking time (an extra day or two) would be the most useful addition.  With 1 person suggested scheduling the days so as to not overlap with the co-located event at all.  Given that there were also requests for more pre-event training, we surmise that if domain science participants had been exposed to even just a first level introduction to topics such as using the command line, version control, and job submission, progress would have been considerably accelerated.
 
 On average participants indicated that they had made 2 new collaborations each.  And overall,  felt engaged, empowered, and that the event was well facilitated.  Some of their suggestions for future events included; having some dedicated relevant-package-specific tutors (such as SciDataKit experts) present, more snacks and budget, more pre-event training, and greater input and clarity regarding possible continuation and follow up plans.
 
 
-%\begin{table}
-
-%\end{table}t]
-% increase table row spacing, adjust to taste
-%\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-%\extrarowheight as needed to properly Center the text within the cells
-
-% Some packages, such as MDW tools, offer better commands for making tables
-% than the plain LaTeX2e tabular which is used here.
-\begin{table}[!h]
+\begin{table}[!t]
 \centering
 \renewcommand{\arraystretch}{1.3}
-\begin{tabular}{|c|c|c|c|}
+
+\caption{*Lines of Code written and commits made from the time of hack repository creation till the end of the hackathon-XSEDE week (22 July 2016).  3 out of 4 repositories have subsequently seen significant contributions beyond this date the data for which have been excluded here.
+**As an existing codebase containing thousands of lines of code, the LOC count given here represents the difference in LOC between git repository on 21 July (last day of XSEDE conference after hackathon) and 16 June (day preceding the hackathon)}
+\label{stats}
+\centering
+\begin{tabular}{|c|c|c|p{2cm}|}
 \hline
 &LOC written* & Commits* & Languages\\
 \hline
@@ -189,14 +184,11 @@ AerosolDelta & 602 & 70 & Python\\
 \hline
 SeaIce & 706 & 60 & Python\\
 \hline
-Parallel OBLIMAP & 80** & 29 & Fortran 90, C Shell, Make\\
+Parallel OBLIMAP & 80** & 29 & Fortran 90, C, Shell, Make\\
 \hline
 3DSeals & 284 & 75 & Python\\
 \hline
 \end{tabular}
-\caption{*Lines of Code written and commits made from the time of hack repository creation till the end of the hackathon-XSEDE week (22 July 2016).  3 out of 4 repositories have subsequently seen significant contributions beyond this date the data for which have been excluded here.
-**As an existing codebase containing thousands of lines of code, the LOC count given here represents the difference in LOC between git repository on 21 July (last day of XSEDE conference after hackathon) and 16 June (day preceding the hackathon)}
-\label{stats}
 \end{table}
 
 Based on the above, what we wish to highlight to the community in this paper, is the potential for using a hackathon as a training and community building event.  That is to say, that while many hackathons aim to produce specific products, we found the format to also be an effective (albeit incomplete) means of overcoming some of the challenges discussed in bridging gaps between the HPDC and Polar Science communities.  Clearly, however, pre-event training, trust building, data preparation, and a more appropriate location or co-location event are key issues to be addressed. 
