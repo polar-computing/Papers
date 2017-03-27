@@ -1,6 +1,24 @@
 \documentclass[conference]{IEEEtran}
 \usepackage{array}
 \usepackage{url}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xspace}
+\usepackage{paralist}
+%\usepackage{xcolor}
+%\usepackage{sloppy}
+\usepackage{array}
+%\usepackage{cite}
+\usepackage{fixltx2e}
+\usepackage{soul}
+\usepackage{amsmath}
+\usepackage{caption}
 \begin{document}
 %
 % paper title
@@ -160,6 +178,18 @@ Within the hackathon, for supervised classification a Quickshift segmentation al
 
 \subsection{Outcomes}
 Table \ref{stats} provides a summary of the event in numerical terms and a social media based account of the event is available at~\cite{noauthor_undated-az}.  Regarding intangible outcomes, in the post-event survey the largest request was for more time.  Despite the majority of respondents agreeing that the objectives were reasonable given the time allotted, afterwards only 35\% (6) of participants considered the allocated time sufficient to reach what were the goals in their view, although 60\% indicated that the majority of objectives had been met.  
+
+Figure 1 represents the usage of the XSEDE resourced during and after the
+event. Multiple resources were used. It is not clear whether the spike in the
+early stages represent null workload (tests) by participants or if they were
+indeed runs of early executables. 
+
+\begin{figure}
+\includegraphics[width=0.49\textwidth]{hack-xsede-usage}
+\caption{\footnotesize XSEDE resource utilization for the 10 day period from the start of the Hackathon. The left axis (blue) represents the number of jobs submitted on a daily basis; the right axis (red) represents the number of core-hours utilized. Approximately 1000 total core-hours were used.}
+\label{fig:xsede-usage} 
+\end{figure}
+
 
 The majority specifically indicated more hacking time (an extra day or two) would be the most useful addition, with one person suggested scheduling the days so as to not overlap with the co-located event at all.  Given that there were also requests for more pre-event training, we surmise that if domain science participants had been exposed to even just a first level introduction to topics such as using the command line, version control, and job submission, progress would have been considerably accelerated.
 
